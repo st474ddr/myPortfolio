@@ -11,15 +11,15 @@ export default {
     const curLang = useStorage<string>('lang', langHandler)
     const changeLang = () => curLang.value = curLang.value === 'en' ? 'zhTW' : 'en'
     const useLang = () => curLang.value === 'en' ? en : zhTW
-    //
-    app.config.globalProperties.$i18n = (key: any, message: any) => {
+    // 
+    app.config.globalProperties.$i18n = (key: any, messages: any) => {
       const lang = useLang()
       const translation = key.split('.').reduce((o: any, i: any) => {
         return o[i]
       }, lang)
-      if (message) {
+      if (messages) {
         return translation.replace(/{(\w+)}/g, (match: any, key: any) => {
-          return message[key]
+          return messages[key]
         })
       }
       return translation

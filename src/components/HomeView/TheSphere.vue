@@ -86,7 +86,7 @@ const bounce = (nodes: any, config: typeof settings) => {
       elasticity: config.center.elasticity,
     };
     if (!i) {
-      anime({...animeSettings, translateY: [{ value: config.center.bounceHeight }, { value: 0 }],});
+      anime({ ...animeSettings, translateY: [{ value: config.center.bounceHeight }, { value: 0 }], });
     } else {
       anime({
         ...animeSettings,
@@ -100,7 +100,7 @@ const bounce = (nodes: any, config: typeof settings) => {
 const handler = () => bounce(cubes.value, settings);
 
 onMounted(() => {
-  cubes.value = Array.from(document.querySelectorAll('.cube')).sort((a, b) => a.dataset.order > b.dataset.order ? 1 : -1);
+  cubes.value = Array.from(document.querySelectorAll('.cube')).sort((a: any, b: any) => a.dataset.order > b.dataset.order ? 1 : -1);
   handler()
   setInterval(handler, 5000);
 });
@@ -156,4 +156,5 @@ onMounted(() => {
   & polygon {
     fill: var(--color-cube-sides);
   }
-}</style>
+}
+</style>

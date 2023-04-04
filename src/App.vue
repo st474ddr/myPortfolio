@@ -13,7 +13,7 @@
 
 <script setup lang="ts">
 const router = useRouter()
-const i18n = inject('func') as LangFunc
+const i18n = inject('func') as any
 router.beforeEach((to, _, next) => { document.title = i18n(to.name as string); next() })
 
 const view = ref<HTMLElement | null>(null);
@@ -39,7 +39,9 @@ watch(direction, (v) => {
   z-index: -1;
 }
 
-.app-background { z-index: -2; }
+.app-background {
+  z-index: -2;
+}
 
 .full-fixed {
   position: fixed;

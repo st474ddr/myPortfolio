@@ -14,7 +14,6 @@ declare module '@vue/runtime-core' {
     CSSItem: typeof import('./../src/components/Techs/CSSItem.vue')['default']
     DartItem: typeof import('./../src/components/Techs/DartItem.vue')['default']
     DockerItem: typeof import('./../src/components/Techs/DockerItem.vue')['default']
-    EducationInfo: typeof import('./../src/components/AboutView/EducationInfo.vue')['default']
     EmailIcon: typeof import('./../src/assets/svg/EmailIcon.vue')['default']
     FigmaItem: typeof import('./../src/components/Techs/FigmaItem.vue')['default']
     FirebaseItem: typeof import('./../src/components/Techs/FirebaseItem.vue')['default']
