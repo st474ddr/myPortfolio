@@ -10,7 +10,7 @@
           <GitHubIcon />
           <small>{{ $i18n('global.moreLink') }}</small>
         </a>
-        <a class="_btn" target="_blank" :href="appLink" :title="$i18n('global.appTitle')">
+        <a class="_btn" target="_blank" :href="appLink" :title="$i18n('global.appTitle')" v-if="appLink">
           <small>{{ $i18n('global.appLink') }}</small>
           <ArrowLink />
         </a>
@@ -76,4 +76,5 @@ defineProps<{
   @media (max-width: 1100px) {
     justify-content: center !important;
   }
-}</style>
+}
+</style>

@@ -9,11 +9,13 @@ declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AboutInfo: typeof import('./../src/components/AboutView/AboutInfo.vue')['default']
     AppBackground: typeof import('./../src/components/AppBackground.vue')['default']
+    ArcoDesignItem: typeof import('./../src/components/Techs/ArcoDesignItem.vue')['default']
     ArrowDown: typeof import('./../src/assets/svg/ArrowDown.vue')['default']
     ArrowLink: typeof import('./../src/assets/svg/ArrowLink.vue')['default']
     CSSItem: typeof import('./../src/components/Techs/CSSItem.vue')['default']
     DartItem: typeof import('./../src/components/Techs/DartItem.vue')['default']
     DockerItem: typeof import('./../src/components/Techs/DockerItem.vue')['default']
+    ElectronItem: typeof import('./../src/components/Techs/ElectronItem.vue')['default']
     EmailIcon: typeof import('./../src/assets/svg/EmailIcon.vue')['default']
     FigmaItem: typeof import('./../src/components/Techs/FigmaItem.vue')['default']
     FirebaseItem: typeof import('./../src/components/Techs/FirebaseItem.vue')['default']

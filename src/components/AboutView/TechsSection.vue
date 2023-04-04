@@ -23,12 +23,14 @@
       <FirebaseItem />
       <VueUseItem />
       <WebpackItem />
+      <ElectronItem />
       <PHPItem />
       <SQLItem />
       <PSItem />
       <WebAssemblyItem />
       <FigmaItem />
       <PWAItem />
+      <ArcoDesignItem />
       <DartItem />
       <FlutterItem />
     </div>
@@ -37,7 +39,6 @@
 </template>
 
 <script setup lang="ts">
-import WebAssemblyItem from '../Techs/WebAssemblyItem.vue';
 
 
 </script>

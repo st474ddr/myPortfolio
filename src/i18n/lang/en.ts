@@ -54,5 +54,8 @@ export default {
     portfolio: {
         stackTitle: 'Application stack',
         descTitle: 'Short description',
+        projects: {
+            'qr-code': 'A QR code generator based on electron, which provides QR code generation functions for text, URL, basic information, and even WiFi, and can save the generated QR code as an image.',
+        }
     }
 }

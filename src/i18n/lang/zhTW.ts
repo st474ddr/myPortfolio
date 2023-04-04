@@ -51,5 +51,8 @@ export default {
     portfolio: {
         stackTitle: '使用技術',
         descTitle: '作品簡述',
+        projects: {
+            'qr-code': '一個基於electron設計的QR code產生器，提供了文字、網址、基本資訊甚至是WiFi的QR code產生功能，並且可以將產生的QR code存成圖片。',
+        }
     }
 }

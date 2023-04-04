@@ -1,14 +1,19 @@
 <template>
   <div class="_wrapper">
     <div class="portfolio">
-      <ProjectItem source-link="" app-link="" :revert="true">
-        <template #img><img src="" alt="#"></template>
+      <ProjectItem source-link="https://github.com/st474ddr/QRcode-Generator" :revert="true">
+        <template #img><img src="@/assets/img/qr-code.jpg" alt="#"></template>
         <template #title>
-          <h1></h1>
+          <h1>QR code generator</h1>
         </template>
         <template #techs>
+          <JSItem />
+          <VueItem />
+          <ElectronItem />
+          <ArcoDesignItem />
         </template>
         <template #desc>
+          {{ $i18n('portfolio.projects.qr-code') }}
         </template>
       </ProjectItem>
       <ProjectItem source-link="" app-link="">
