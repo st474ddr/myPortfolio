@@ -53,6 +53,7 @@ export default {
         descTitle: '作品簡述',
         projects: {
             'qr-code': '一個基於electron設計的QR code產生器，提供了文字、網址、基本資訊甚至是WiFi的QR code產生功能，並且可以將產生的QR code存成圖片。',
+            'audio-visualization': '一個基於Web Audio API設計的音樂視覺化網站，可以提供頻率視覺化、波形視覺化等功能。',
         }
     }
 }

@@ -1,3 +1,6 @@
+
+import type SassItemVue from '@/components/Techs/SassItem.vue';
+
 <template>
   <div class="_wrapper">
     <div class="portfolio">
@@ -9,6 +12,9 @@
         <template #techs>
           <JSItem />
           <VueItem />
+          <CSSItem />
+          <SassItem />
+          <VueRouterItem />
           <ElectronItem />
           <ArcoDesignItem />
         </template>
@@ -16,14 +22,19 @@
           {{ $i18n('portfolio.projects.qr-code') }}
         </template>
       </ProjectItem>
-      <ProjectItem source-link="" app-link="">
-        <template #img><img src="" alt="#"></template>
+      <ProjectItem source-link="https://github.com/st474ddr/audio-visiualization" app-link="https://main--lighthearted-lily-6e613b.netlify.app/">
+        <template #img><img src="@/assets/img/audio-visualization.jpg" alt="#"></template>
         <template #title>
-          <h1></h1>
+          <h1>Audio Visualization</h1>
         </template>
         <template #techs>
+          <JSItem />
+          <VueItem />
+          <CSSItem />
+          <SassItem />
         </template>
         <template #desc>
+          {{ $i18n('portfolio.projects.audio-visualization') }}
         </template>
       </ProjectItem>
     </div>

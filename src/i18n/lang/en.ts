@@ -56,6 +56,7 @@ export default {
         descTitle: 'Short description',
         projects: {
             'qr-code': 'A QR code generator based on electron, which provides QR code generation functions for text, URL, basic information, and even WiFi, and can save the generated QR code as an image.',
+            'audio-visualization': 'A simple audio visualization project based on the Web Audio API, which can visualize the audio frequency spectrum and waveform.',
         }
     }
 }
